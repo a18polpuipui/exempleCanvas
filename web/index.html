@@ -13,37 +13,25 @@
 			var context = canvas.getContext("2d");
 
 			//Fons 
-			context.fillStyle = "black";
-			context.fillRect(40, 100, 80, 240);
+			context.fillStyle = "#ffffaa";
+			context.fillRect(0, 0, 500, 300);
 			context.fillStyle = "#000000";
-
-			//Fons 
-			context.fillStyle = "black";
-			context.fillRect(140, 25, 80, 315);
-			context.fillStyle = "#000000";
-			//Fons 
-			context.fillStyle = "black";
-			context.fillRect(240, 25, 80, 240);
-			context.fillStyle = "#000000";
-
-			context.beginPath();
-			context.arc(75,75,50,0,Math.PI*2,true); // Círculo externo
 
 			//Text
-			// context.font = "28px _sans";
-			// context.textBaseline = "top";
-			// context.fillText("Hola Món!", 95, 80);
+			context.font = "28px _sans";
+			context.textBaseline = "top";
+			context.fillText("Hola Món!", 195, 80);
 
 			//Caixa
 			context.strokeStyle = "#000000";
-			context.strokeRect(5, 5, 400, 350);
+			context.strokeRect(5, 5, 490, 290);
 		}
 	</script>
 </head>
 
 <body onload="pintaCanvas()">
 	<div style="position: absolute; top: 50px; left: 50px;">
-		<canvas id="canvas" width="600" height="1000">
+		<canvas id="canvas" width="500" height="300">
 			El teu navegador no suporta HTML 5 canvas
 		</canvas>
 	</div>
